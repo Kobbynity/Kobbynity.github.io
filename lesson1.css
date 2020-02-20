@@ -1,0 +1,368 @@
+﻿/* My Website
+Website name: Many tutorials
+Author: Kobb1y
+Date: 10th June, 2015
+File type: Cascading style sheet
+*/
+
+/* =============================== Styles sheet ======================= */
+
+* {margin:0; padding:0}
+
+body{text-align:center;
+	
+}
+
+/* green header background */
+#banner {width:84.35em;
+		height:6.5em;
+		background-color:#074430; 
+}
+
+ /* logo (many tutorials) */
+#logo {position:absolute;
+	   left:10em; top:0.9em;
+	   }
+	   
+form  {position:absolute;
+	  left:60em; top:1em}
+	  
+form  #searchbox  {width:12em;
+				 height:0.8em;
+				 padding:0.5em;
+				 border:0.1em solid #21A649;
+				 border-radius:0.3em;
+				 }
+				 
+form  #searchbox:hover  {background-color:white}
+				 
+form  #submit  {width:3em;
+			  height:2em;
+			  border:0.1em solid orange;
+			  border-radius:0em 0.3em 0.3em 0em;
+			  position:relative;
+			  left:-0.5em;
+			  background:url(images/search.png) no-repeat #ffb956 center}
+	
+/* orange colour below green banner */	
+#banner_below {width:84.35em;
+			   height:2em;
+			   background-color:#21A649; 
+			   }
+			   
+#navigation_menu{position:absolute;
+				 left:23em; top:3.7em;}			   
+			   
+nav  ul {list-style-type:none;
+	  
+}
+
+nav  > ul > li  {float:left;
+		 position:relative;
+		 background-color:rgb(7,68,48);
+		 width:8em;
+		 text-align:center;
+		 		 
+}
+
+
+nav  ul  li  a {text-decoration:none;
+		  font-family:segoe ui;
+		  color:white;
+		  font-size:1.03em;
+		  display:block;
+		  border-radius:0.4em 0.4em 0 0;
+		  padding:0.5em 0 0.5em 0;
+		  transition: 0.05s ease-out
+		  }
+		  
+nav  ul  li:hover > a {color:rgb(7,68,48);
+				  background-color:white;
+				  }
+				  
+
+nav  ul  li  ul  li {background-color:white;
+			width:10em;
+			height:0em;
+			line-height:1em;
+			border:0.15em solid white;
+			overflow:hidden;
+			transition:height 0.4s ease-out
+}
+
+nav  ul  li  ul  li  a {color:black;
+			  border-radius:0.3em;
+			  font-size:0.9em;
+			  
+
+}
+
+nav  ul  li  ul {position:absolute;
+		  visibility:hidden;
+		  border-left:0.15em solid #D6DFD9;
+		  border-right:0.1em solid #D6DFD9;
+		  border-bottom:0.1em solid #D6DFD9;
+		  border-radius:0em 0em 0.4em 0.4em;
+		  box-shadow:0.2em 0.2em 0.1em rgb(7,68,48);
+		  
+		
+}
+
+nav  ul li:hover > ul {visibility:visible;}
+
+nav  ul  li:hover ul  li {height:2em;}
+				  
+
+
+nav  ul  li  ul  li:hover > a {color:white;
+					background-color:rgb(7,68,48);
+
+}
+
+nav  ul  li  ul  li  #submenu1{position:absolute;
+			         left:10em; top:9em;
+					 border-top:0.1em solid #D6DFD9;
+					 z-index:1
+}
+
+
+nav  ul  li  ul  li  #submenu2{position:absolute;
+					  left:10em; top:4.5em;
+					  border-top:0.1em solid #D6DFD9;
+					  z-index:1
+					  }
+					  
+nav  ul  li  ul  li  ul  li {width:0em;
+				transition:width 0.3s ease-out
+}
+
+nav  ul  li  ul  li:hover  ul  li {width:8em}
+
+
+/* ==========================PAGE CONTETENT*============================ */
+
+header, section, article, footer  {display:block}
+
+#page_content {
+			   width:68em;
+			   margin:1.25em auto;
+			   text-align:left;
+			   font-family:segoe ui;
+			   font-size:0.9em;
+			   line-height:1.6em;
+			   
+}
+
+#main_header  {font-size:2.5em;
+			  font-weight:400;
+			  margin-top:1.5em;
+			  border-bottom:0.01em solid #e2e2e2;
+			  padding-bottom:0.5em
+}
+
+			   
+
+#yahoo  {position:absolute;
+			   left:64em;
+			   top:18em;
+			   transition:0.25s ease-out}
+			   
+#yahoo:hover {width:35; height:35}
+
+#gmail  {position:absolute;
+			   left:66.5em;
+			   top:18em;
+			   transition:0.25s ease-out}
+			   
+#gmail:hover {width:35; height:35}
+
+#whatsapp{position:absolute;
+			   left:69em;
+			   top:18em;
+			   transition:0.25s ease-out}
+			   
+#whatsapp:hover {width:35; height:35}
+
+#google_plus  {position:absolute;
+			   left:71.5em;
+			   top:18em;
+			   transition:0.25s ease-out}
+			   
+#google_plus:hover {width:35; height:35}
+
+#facebook  {position:absolute;
+			   left:74em;
+			   top:18em;
+			   transition:0.25s ease-out}
+			   
+#facebook:hover {width:35; height:35}
+
+#twitter  {position:absolute;
+			   left:76.5em;
+			   top:18em;
+			   transition:0.25s ease-out}
+			   
+#twitter:hover {width:35; height:35}
+
+
+#main_content  {float:left;
+			   width:46em;
+			   margin:0.5em 1em 1.5em 0em;  
+}
+
+ 
+section article  {margin:1em 0em}
+section  article  header  {margin:2em 0em 1em 0em;
+					font-size:1em;
+					font-weight:lighter;
+					color:#4a4845
+}
+
+section  article  figure  {margin:1em 0em  0.5em 0em;
+				   }
+				   
+section  article  figurecaption  {font-style:italic;
+						 font-size:0.8em;
+						 font-weight:bold;
+						 text-align:center;
+						 position:relative;
+						 left:15em;
+						 }
+						 
+#video1  {margin:2em 0em 0em 3em;
+		 }
+		 
+
+
+#video1  p  {margin:0em 0em 1em 11em;}	
+ 
+						 
+#article1 #thumbnails  {margin:1em 0em 0em 2em;
+					  width:36.5em; height:38em;
+					  border-bottom:0.2em solid #e2e2e2;
+					  padding-bottom:2em
+					  }
+			 
+						 
+#article1  #thumbnails  img{float:left;
+						  margin:1em;
+						  opacity:1;
+						  transition:opacity 0.3s ease-out, transform 0.2s ease-out}
+			
+#article1  #thumbnails  img:hover   {outline:0.25em solid orange;
+								  opacity:0.8;
+								  transform:scale(1.03)}
+
+section  a  {text-decoration:none}
+
+					
+#side_news {float:left;
+			width:18em;
+			margin:7em 0em 0em 2em		
+}
+
+
+
+#sidenews1  {text-align:center;
+			border:;
+			padding:0.2em;
+			border-radius:0.4em;
+			background-color:#e2e2e2
+}
+
+
+#sidenews1  header  {margin:0em 0em 1em 0em}
+#sidenews1  figure  {text-align:center;				  
+}
+
+#sidenews2  header {margin:4em 0em 1em 0em;
+				  border-bottom:0.2em solid #e2e2e2;
+				  border-top:0.2em solid #e2e2e2;
+				  padding:0.5em 0em 0.5em 0em;
+				  color:#21A649;
+}
+
+#sidenews2  #s1  {width:18em}
+#sidenews2  #s1  figure  {float:left;
+					 margin-right:1.2em;
+					 
+}
+
+#sidenews2  #s2  {width:18.5em; 
+				clear:left;
+				margin:2.5em 0em 1em 0em}
+#sidenews2  #s2  figure  {float:left;
+					 margin-right:1.2em;
+					 position:relative;
+					 top:0.5em
+}
+
+#sidenews2  #s3  {width:18.5em;
+				margin:2em 0em 1em 0em}
+#sidenews2  #s3  figure  {float:left;
+					 margin-right:1.2em
+}
+
+#sidenews2  #s4  {width:18.5em;
+				clear:left;
+				margin:2.6em 0em 1em 0em}
+#sidenews2  #s4  figure  {float:left;
+					 margin-right:1.2em;
+					 position:relative;
+					 top:0.5em
+}
+
+#sidenews2  #s5  {width:18em;
+				clear:left;
+				margin:4em 0em 1em 0em}
+#sidenews2  #s5  figure  {float:left;
+					 margin-right:1.2em
+}
+
+#main_footer {clear:both;
+			  text-align:center;
+			  font-family:segoe ui;
+			  
+}
+
+#footer1 {background-color:#21A649;
+		  width:89.74em;
+		  padding:2em;
+		  text-align:center;
+		  font-size:.9em;
+		  color:#2b2d32
+}
+
+#footer1 div  {display:table-cell;
+			 padding-left:7em
+}
+
+#share figure  img  {background-color:#7b7e82}
+#share figure  #fbk:hover  {background-color:#3b5998}
+#share figure  #tweet:hover  {background-color:#79c3f6}
+
+#follow  figure  img  {background-color:#7b7e82}
+#follow  figure  #lin:hover  {background-color:#0177b5}
+
+#footer2 {background-color:#074430;
+		  width:89.74em;
+		  padding:2em;
+		  font-size:0.9em;
+		  color:white
+}
+
+#footer2  ul  {list-style-type:none;
+			display:table-cell;
+			padding-left:5em
+}
+
+#footer2  p  {margin-top:2em}
+
+
+
+
+
+
+
+
+
